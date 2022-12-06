@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/paulussujono/advent-of-code/issues"
   },
-  "homepage": "https://github.com/paulussujono/advent-of-code#readme"
+  "homepage": "https://github.com/paulussujono/advent-of-code#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
