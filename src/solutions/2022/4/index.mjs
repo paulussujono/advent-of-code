@@ -1,13 +1,10 @@
 import intersection from "lodash/intersection.js";
-import { readFile } from "../../../util/index.mjs";
+import { readFile, createRange } from "../../../util/index.mjs";
 
 const parsePair = (str) => {
   const [_, low, high] = str.match(/^(\d+)-(\d+)$/);
   return [low, high].map(Number);
 };
-
-const createRange = ([low, high]) =>
-  [...Array(high - low + 1).keys()].map((el) => el + low);
 
 const input = readFile("./input.txt");
 const lines = input.split("\n");
